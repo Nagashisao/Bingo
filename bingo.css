@@ -11,17 +11,27 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-}
-
-.container {
     text-align: center;
 }
 
+.container {
+    margin-bottom: 20px;
+}
+
+.bingo-container {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 510px;  /* Espaço suficiente para as letras */
+}
+
 .circle {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background-color: #3498db; /* Cor de fundo do círculo */
+    background-color: #ffcc00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,4 +57,28 @@ button {
 
 button:hover {
     background-color: #27ae60;
+}
+
+/* Estilo da cartela de bingo */
+.bingo-cartela {
+    display: grid;
+    grid-template-columns: repeat(5, 100px); /* 5 colunas, uma para cada letra */
+    gap: 5px;
+    justify-content: center;
+    width: 510px; /* Mesma largura do header */
+}
+
+/* Estilo das células da cartela */
+.bingo-celula {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.marcado {
+    background-color: #FF0000;  /* Marca o número com vermelho */
 }

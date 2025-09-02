@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Círculo com Número Aleatório</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bingo</title>
+    <link rel="stylesheet" href="bingo.css">
 </head>
 <body>
     <div class="container">
+        <!-- Título BINGO -->
+        <div class="bingo-container">
+            <span>B</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            <span>O</span>
+        </div>
+
+        <!-- Círculo para exibir o número sorteado -->
         <div id="circle" class="circle">
             <span id="number">0</span>
         </div>
+
+        <!-- Botão para gerar número -->
         <button onclick="gerarNumero()">Gerar Número</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Cartela de bingo -->
+    <div id="bingo-cartela" class="bingo-cartela"></div>
+
+    <script src="bingo.js"></script>
 </body>
 </html>
